@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style.css" />
+   
+  </head>
+  <body>
+    <nav>
+        <div class="logo">
+            <img src="./img/orange.png" alt="bad orange icon"
+            width="60px" height="60px">
+            
+        </div>
+        <ul>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="about.html">
+                <li>About</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+            
+            
+        </ul>
+
+    </nav>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information so we can stay in touch!</p>
+    <form method="post" action=''>
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="">terms and conditions</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Facebook</option>
+            <option value="2">Instagram</option>
+            <option value="3">Radio</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I'm aircooled..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+
+    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102251.87718826893!2d-119.8646011339294!3d36.78565040340237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945de1549e4e9d%3A0x7b12406449a3b811!2sFresno%2C%20CA!5e0!3m2!1sen!2sus!4v1671020632320!5m2!1sen!2sus" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+<br>
+<br>
+    <footer>
+        <ul class="socialmedia">
+            <a href="#">
+                <li class="facebook"><img src="img/fb.png" alt="facebook_icon_link"></li>
+            </a>
+            <a href="#">
+                <li class="instagram"><img src="img/insta.png" alt="instagram_icon_link"></li>
+            </a>
+            <a href="#">
+                <li class="twitter"><img src="img/twit.png" alt="twitter_icon_link"></li>
+            </a>
+            <a href="#">
+                <li class="linkedin"><img src="img/li.png" alt="linkedin_icon_link"></li>
+            </a>
+        </ul>
+    </footer>
+  </body>
+</html>
